@@ -11,3 +11,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## Portfolio content preferences
 
 Preserve the original Framer template appearance. Personalization changes project details only; keep the existing layout, typography, spacing, card styles, and image framing. Featured work starts with PEARL; LumeX, Planza, and Horizon Atlas are temporary example projects. Original project artwork is placeholder imagery until replacement screenshots are provided.
+
+PEARL imagery must match the original Pulma asset treatment: muted blue cloudy background, thin translucent double frame, large rounded screen inset, and no navy band. The PEARL detail gallery contains distinct login, student, and vendor screens in that order. Vendor imagery may use the actual source components with explicitly named demo records; never substitute the public landing page for an authenticated dashboard.
