@@ -1,4 +1,26 @@
 html{scroll-behavior:smooth}body{margin:0}#root{min-height:100vh}button{font:inherit}a,button,[role=button]{cursor:pointer}a:focus-visible,button:focus-visible,[role=button]:focus-visible{outline:2px solid #772cff;outline-offset:4px}
 .ported-faq .framer-2uce7y{cursor:pointer}.ported-faq[data-open=false] .framer-3w6drj-container{transform:rotate(45deg)!important}.ported-faq[data-open=true] .framer-3w6drj-container{transform:none!important}.ported-faq .framer-1h4hqtz{height:auto!important;opacity:1!important}.ported-faq .framer-1h4hqtz p{margin:0}
 button.framer-o65npq-container{border:0;padding:0;background:none;color:inherit;display:block}.form-status{font:400 14px/1.5 'Instrument Sans',sans-serif;color:white;margin:8px 0 0}.not-found{padding:80px;font-family:'Instrument Sans',sans-serif}
+/* Service cards: original Framer hover states, spring 500 / damping 60 / mass 1.
+   Keep the captured layout; translate its two stacked labels/icons instead of
+   snapping flex alignment. No hover interaction is applied to touch cards. */
+.personalized-service{--service-spring:linear(0,.196,.443,.624,.748,.831,.887,.924,.949,.966,.977,.985,.990,.993,.995,.997,.998,.999,.999,1,1)}
+.personalized-service .framer-1musraz,.personalized-service .framer-1t73ywi,.personalized-service .framer-ecvo9g-container,.personalized-service .framer-f48hok-container{transition:transform .8s var(--service-spring)}
+.personalized-service .framer-5rx2c1{transition:opacity .8s var(--service-spring)}
+.personalized-service .framer-8lqob{transition:box-shadow .8s var(--service-spring)}
+@media(min-width:810px){
+  .personalized-service:focus-visible .framer-1musraz,.personalized-service:focus-visible .framer-1t73ywi{transform:translateY(-100%)!important}
+  .personalized-service:focus-visible .framer-ecvo9g-container{transform:translateY(-36px)!important}
+  .personalized-service:focus-visible .framer-f48hok-container{transform:translateY(-36px) rotate(0deg)!important}
+  .personalized-service:focus-visible .framer-5rx2c1{opacity:.3!important}
+  .personalized-service.framer-v-wtw9jn:focus-visible .framer-8lqob{box-shadow:0 .602187px .602187px -.833333px #0000000d,0 2.288533px 2.288533px -1.666667px #0000000d,0 10px 10px -2.5px #0000000d!important}
+}
+@media(min-width:810px) and (hover:hover){
+  .personalized-service:hover .framer-1musraz,.personalized-service:hover .framer-1t73ywi{transform:translateY(-100%)!important}
+  .personalized-service:hover .framer-ecvo9g-container{transform:translateY(-36px)!important}
+  .personalized-service:hover .framer-f48hok-container{transform:translateY(-36px) rotate(0deg)!important}
+  .personalized-service:hover .framer-5rx2c1{opacity:.3!important}
+  .personalized-service.framer-v-wtw9jn:hover .framer-8lqob{box-shadow:0 .602187px .602187px -.833333px #0000000d,0 2.288533px 2.288533px -1.666667px #0000000d,0 10px 10px -2.5px #0000000d!important}
+}
+@media(max-width:809px){.personalized-service .framer-f48hok-container{transform:rotate(0deg)!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
